@@ -1,19 +1,44 @@
-# Proyecto-3-CPD
+# Proyecto 3 - CPD
 
-
-
-- Maintainer: Calvoloncio <xavichavochavuski@gmail.com>
-- Purpose: 
-
-## Development
-
-Python 3.12. Dependencies and checks are ready.
+## Descargar el proyecto
 
 ```bash
-make install  # first setup after cloning
-make test
+git clone https://github.com/Calvoloncio/Proyecto-3-CPD.git
+cd Proyecto-3-CPD
 ```
 
-Add packages with `uv add <package>`; format code with `make format`.
-Change the version only in `pyproject.toml`.
-Use `make update` after dependency or version changes. Commit `uv.lock`.
+## Preparar el entorno
+
+```bash
+uv sync
+```
+
+Instalar Pre-commit (Windows / PowerShell):
+
+```powershell
+.\.venv\Scripts\python.exe -m pre_commit install
+```
+
+## Trabajar con Git y subir cambios
+
+Actualizar el proyecto:
+
+```bash
+git pull origin main
+```
+
+Crear una rama:
+
+```bash
+git checkout -b feature/nombre
+```
+
+Guardar y subir cambios:
+
+```bash
+git add .
+git commit -m "Descripción de los cambios"
+git push -u origin feature/nombre
+```
+
+Después, crear un Pull Request en GitHub para incorporar los cambios a `main`.
